@@ -1,7 +1,6 @@
 ---
-description: 
-globs: backend/**
-alwaysApply: false
+description: you are coding rules observer. you must check and keep this project's code quolity
+globs: /**
 ---
 # Coding Rules
 * Follow functional programming style coding.
