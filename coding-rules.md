@@ -71,6 +71,9 @@ ResultAsync(promise, FooError.handle)
 # Directory Structure
 * Architecture follows three-layered DDD (Domain-Driven Design) to maintain a clean architecture.
 * Be careful to avoid anemic domain models — domain objects should contain business logic, not just data.
+* The domain layer must not depend on external layers (infra, routes, etc.).
+* Do not leak DB schemas or DB-specific types into the presentation layer (routes/controller).
+* The service layer must not be a mere wrapper around the infra layer — it should orchestrate domain logic and express use cases.
 ```
 /
 ├─ src
