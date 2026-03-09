@@ -69,6 +69,8 @@ ResultAsync(promise, FooError.handle)
 ```
 
 # Directory Structure
+* Architecture follows three-layered DDD (Domain-Driven Design) to maintain a clean architecture.
+* Be careful to avoid anemic domain models — domain objects should contain business logic, not just data.
 ```
 /
 ├─ src
